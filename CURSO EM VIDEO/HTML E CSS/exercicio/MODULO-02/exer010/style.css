@@ -130,10 +130,66 @@ header
 .galeria
 {
     display:flex;
+    flex-direction: column;
     justify-content:center;
 }
 
 .galeria h1
+{
+    margin: 10px;
+    padding: 5px;
+    font-size: 3rem;
+    font-style: italic;
+    text-align: center;
+    text-shadow: 4px 3px 2px #0a0a0a;
+    font-family: 'Rancho', cursive;
+    color: #94E66E;
+}
+
+.titulo
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 98vw;
+    margin: 10px;
+}
+
+.fotos
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 98vw;
+    margin: 10px;
+}
+
+.foto
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 10px;
+    padding: 5px;
+    width: 50vw;
+}
+
+.foto img
+{
+    width: 100px;
+    box-shadow: 4px 3px #0a0a0a;
+    border-radius: 200px;
+    cursor: pointer;
+}
+
+.foto img:hover
+{
+    width: 200px;
+    margin: 3px;
+    box-shadow: 4px 3px #03a686;
+}
+
+.titulo
 {
     margin: 10px;
     padding: 5px;
