@@ -2,7 +2,7 @@
 *{
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
+    box-sizing: border-box
 }
 
   @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
@@ -29,36 +29,78 @@
 
 body, html
 {
-    max-width: 1024px;
+    /*max-width: 1024px;*/
     font-family: var(--fonte-padrao);
     background-color: #c5ebd6;
 }
 
+header
+{
+    width: 98vw;
+    min-height: 150px;
+    margin: 10px;
+    padding: 40px;
+    border-radius: 25px;
+    text-align: center;
+    color: white;
+    background-image: linear-gradient(to bottom, var(--cor3), var(--cor5));
+}
+
 header h1
 {
+    margin: 2px;
     font-family: var(--fonte-destaque);
-    text-shadow: 4px 3px 2px var(--cor5);
+    font-size: 3em;
+    text-shadow: 4px 1px 2px var(--cor0);
     color: var(--cor3);
 }
 
 header > p
 {
-    text-shadow: var(--cor0);
-    color: var(--cor5);
+    margin: 2px;
+    font-size: 1.2em;
+    text-shadow: 2px 1px var(--cor0);
+    color: var(--cor3);
 }
 
 nav
 {
-    margin: 10px;
+    display: flex;
+    justify-content: space-between;
+    margin: 15px;
+    padding: 10px;
+    border-bottom-left-radius: 25px;
+    border-bottom-right-radius: 25px;
+    box-shadow: 0px 7px 7px rgba(0, 0, 0, 0.192);
+    background-color: var(--cor0);
+}
+
+nav > a
+{
+    padding: 10px;
+    font-weight: bold;
+    text-decoration: none;
+    text-shadow: 0px 7px 7px rgba(0, 0, 0, 0.192);
+    transition-duration: 0.5s;
+    color: var(--cor3);
+}
+
+nav > a:hover
+{
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+    color: var(--cor0);
+    background-color: var(--cor4);
 }
 
 main
 {
-    max-width: 850px;
-    min-width: 320px;
     margin: auto;
-    padding: 10px;
+    max-width: 1000px;
+    min-width: 300px;
+    padding: 20px;
     border-radius: 20px;
+    box-shadow: 0px 0px 10px var(--cor5);
     background-color: white;
 }
 
@@ -71,9 +113,87 @@ main h1
 
 main h2
 {
+    margin: 15px 0px;
+    padding: 5px 0px;
+    font-size: 1.3em;
     font-family: var(--fonte-androie);
+    text-indent: 8px;
     text-shadow: 4px 3px 2px var(--cor5);
+    border-top-left-radius: 25px;
+    border-bottom-left-radius: 25px;
     color: var(--cor3);
+    background-image: linear-gradient(to right, var(--cor2), transparent);
+}
+
+article p
+{
+    margin: 20px 0px;
+    padding: 6px;
+    text-align: justify;
+    text-indent: 30px;
+    font-size: 1em;
+    line-height: 2em;
+}
+
+article strong
+{
+    padding: 1px 3px;
+    font-style: italic;
+    font-weight: bolder;
+    color: var(--cor4);
+}
+
+article a
+{
+    padding: 2px 6px;
+    font-weight: bold;
+    text-decoration: none;
+    color: var(--cor5);
+}
+
+article a:hover
+{
+    text-decoration: underline;
+    color: var(--cor0);
+    background-color: var(--cor5);
+}
+
+main img
+{
+    width: 100%;
+}
+
+main img.pq
+{
+    max-width: 350px;
+    display: block;
+    margin: auto;
+}
+
+aside
+{
+    margin: 10px;
+    padding: 15px;
+    border-radius: 30px;
+    background-color: var(--cor1);
+}
+
+aside > h3
+{
+    margin: -20px -20px 0px -15px;
+    padding: 10px;
+    text-shadow: 5px 5px 3px var(--cor5);
+    border-radius: 30px 30px 0px 0px;
+    color: white;
+    background-image: linear-gradient(to right, var(--cor3), transparent);
+}
+
+aside > ul
+{
+    list-style-type: '\1F5F8\00A\00A';
+    list-style-position: inside;
+    line-height: 1.5em;
+    columns: 3;
 }
 
 footer
@@ -84,5 +204,5 @@ footer
     border-radius: 20px;
     text-align: center;
     color: white;
-    background-color: var(--cor5);
+    background-image: linear-gradient(to bottom, var(--cor3), var(--cor5));
 }
