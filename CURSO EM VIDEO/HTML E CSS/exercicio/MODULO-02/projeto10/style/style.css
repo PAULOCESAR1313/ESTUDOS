@@ -34,6 +34,11 @@ body, html
     background-color: #c5ebd6;
 }
 
+a.externo::after
+{
+    content: '\00A0\1F517';
+}
+
 header
 {
     width: 98vw;
@@ -168,6 +173,24 @@ main img.pq
     max-width: 350px;
     display: block;
     margin: auto;
+}
+
+div.video
+{
+    margin: 0px -18px 30px -70px;
+    padding: 20px;
+    padding-bottom: 60%;
+    position: relative;
+    /*background-color: #2fa866;*/
+}
+
+div.video > iframe
+{
+    width: 95%;
+    height: 95%;
+    position: absolute;
+    top: 5%;
+    left: 5%;
 }
 
 aside
