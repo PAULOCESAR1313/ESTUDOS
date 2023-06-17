@@ -1,0 +1,48 @@
+@charset "utf8";
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body, html
+{
+    max-width: 1024px;
+    margin: auto;
+    background-color: black;
+}
+
+#caixa
+{
+    display: flex;
+    justify-content:space-around;
+    align-items: center;
+    margin: auto;
+}
+
+div.quadrada
+{
+    display: inline-block;
+    width: 300px;
+    height: 300px;
+    margin: 10px;
+    border: 2px solid red;
+    border-radius: 10px;
+    background-color: lightgray;
+}
+
+div#q1
+{
+    background-color: aquamarine;
+}
+
+div#q2
+{
+  background-image: linear-gradient(to bottom, yellow, orange);  
+}
+
+div#q3
+{
+   background-image: url('img/pattern003.png'); 
+}
