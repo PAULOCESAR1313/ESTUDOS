@@ -43,6 +43,40 @@ header nav a
     text-decoration: none;
 }
 
+header nav a.active
+{
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    color: #333;
+    background: var(--crl);
+}
+
+header nav a.active::before
+{
+    width: 20px;
+    height: 20px;
+    content: '';
+    position: absolute;
+    left: -20px;
+    bottom: 0;
+    border-bottom-right-radius: 20px;
+    box-shadow: 5px 5px 0 5px var(--crl);
+    background: #0f0;
+}
+
+header nav a.active::after
+{
+    width: 20px;
+    height: 20px;
+    content: '';
+    position: absolute;
+    left: -20px;
+    bottom: 0;
+    border-bottom-right-radius: 20px;
+    box-shadow: 5px 5px 0 5px var(--crl);
+    background: #0f0;
+}
+
 section
 {
     display: flex;
