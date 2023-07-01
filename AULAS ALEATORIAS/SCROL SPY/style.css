@@ -61,7 +61,7 @@ header nav a.active::before
     bottom: 0;
     border-bottom-right-radius: 20px;
     box-shadow: 5px 5px 0 5px var(--crl);
-    background: #0f0;
+    background: transparent;
 }
 
 header nav a.active::after
@@ -70,11 +70,11 @@ header nav a.active::after
     height: 20px;
     content: '';
     position: absolute;
-    left: -20px;
+    right: -20px;
     bottom: 0;
-    border-bottom-right-radius: 20px;
-    box-shadow: 5px 5px 0 5px var(--crl);
-    background: #0f0;
+    border-bottom-left-radius: 20px;
+    box-shadow: -5px 5px 0 5px var(--crl);
+    background: transparent;
 }
 
 section
