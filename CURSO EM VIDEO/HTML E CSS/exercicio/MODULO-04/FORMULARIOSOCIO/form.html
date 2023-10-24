@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>formulario de cadastro de Sócios</title>
+</head>
+<body>
+    <header>
+        <section>
+            <div class="content-title">
+                <div class="title">
+                    <h1>
+                        Cadastro de Sócios
+                    </h1>
+                </div>
+            </div>
+        </section>
+        <section>
+            <nav>
+                <ul>
+                    <li>SÓCIO</li>
+                    <li>COMPRA</li>
+                    <li>VENDA</li>
+                    <li>PRODUÇÃO</li>
+                </ul>
+            </nav>
+        </section>
+    </header>
+    <main>
+        <section>
+            <div>
+                <form action="" method="post" autocomplete="on">
+                    <div>
+                        <div>
+                            <label for="iname">SÓCIO:</label>
+                            <input type="text" name="name" id="iname" required maxlength="200" placeholder="Nome Completo" autocomplete="name">
+                        </div>
+                        <div>
+                            <label for="inumber">REGISTRO:</label>
+                            <input type="number" name="number" id="inumber" min="1" max="500" placeholder="ID" step="1">
+                        </div>
+                        <div>
+                            <label for="irua">RUA:</label>
+                            <input type="text" name="rua" id="irua" required maxlength="200" placeholder="AV. RUA" autocomplete="name">
+                        </div>
+                        <div>
+                            <label for="icasa">CASA Nº:</label>
+                            <input type="text" name="casa" id="icasa" required maxlength="2000" placeholder="CASA Nº" autocomplete="name">
+                        </div>
+                        <div>
+                            <label for="ibairro">BAIRRO:</label>
+                            <input type="text" name="bairro" id="ibairro" required maxlength="200" placeholder="Nome do Bairro" autocomplete="name">
+                        </div>
+                        <div>
+                            <label for="ifone">TELEFONE:</label>
+                            <input type="tel" name="" id="" required  placeholder="(99) 99999-9999" autocomplete="name">
+                        </div>
+                        <div>
+                            <label for="irg">RG:</label>
+                            <input type="text" name="rg" id="irg" required maxlength="200" placeholder="00.000.000.0000-00">
+                        </div>
+                        <div>
+                            <label for="icpf">CPF:</label>
+                            <input type="text" name="cpf" id="icpf" required maxlength="200" placeholder="000.000.000-00">
+                        </div>
+                        <div>
+                            <label for="icart">CARTEIRA DE TRABALHO:</label>
+                            <input type="text" name="cart" id="icart" maxlength="200" placeholder="0000-00">
+                        </div>
+                        <div>
+                            <label for="ititulo">TITULO DE ELEITO Nº:</label>
+                            <input type="text" name="titulo" id="ititulo" maxlength="200">
+                        </div>
+                        <div>
+                            <label for="izona">ZONA:</label>
+                            <input type="NUMBER" name="zona" id="izona" min="1" max="200">
+                        </div>
+                        <div>
+                            <label for="isecao">SEÇÃO:</label>
+                            <input type="number" name="secao" id="isecao" min="1" max="200">
+                        </div>
+                    </div>
+                        <div>
+                            <label for="imes">ULTIMO PAGAMENTO:</label>
+                            <input type="month" name="mes" id="imes">
+                        </div>
+                        <div>
+                            <label for="itotal">TOTAL DE MESES PAGO:</label>
+                            <input type="number" name="total" id="itotal" min="1" max="100" step="0.5">
+                        </div>
+                        <div>
+                            <label for="iate">PAGO ATÉ:</label>
+                            <input type="month" name="ate" id="iate">
+                        </div>
+                    <div>
+                        <input type="submit" value="ENVIAR">
+                        <input type="reset" value="LIMPA">
+                    </div>
+                </form>
+            </div>
+        </section>
+    </main>
+</body>
+</html>
